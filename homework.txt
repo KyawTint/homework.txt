@@ -1,1 +1,58 @@
-ECHO is on.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // document.write(Math.PI);
+        // document.write(Math.E);
+        // document.write(Math.sin(3));
+        // document.write(Math.round(1.8));
+        // document.write(Math.ceil(4.1));
+        document.write(Math.floor(7.9));
+    </script>
+    
+    
+</body>
+</html>
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <script src="js/moment.js"></script>
+    <script src="js/moment-with-locales.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+        var oct = moment("2018-09-18T07:54:00Z");
+        oct.tz('Asia/Yangon').format('ha z'); 
+        var Yangon    = moment.tz("2018-09-18T07", "Asia/Yangon");
+        var Babgkok = Yangon.clone().tz("Thai/bangkok");
+        var Osaka    = Yangon.clone().tz("Japan/Osaka");
+        var Sydney    = Yangon.clone().tz("Australia/Sydney");
+        Yangon.format();
+        Babgkok.format();
+        Osaka.format();
+        Sydney.format();
+    </script>
+</body>
+</html>
